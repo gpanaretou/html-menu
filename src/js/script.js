@@ -13,3 +13,10 @@ function closeMenu() {
     sideMenu.classList.remove('left-0');
     sideMenu.classList.add('left-[-250px]');
 }
+
+function toggleMenuOptions() {
+    let homeButton = document.getElementById('navbar-menu-dropdown');
+
+    homeButton.classList.toggle('hidden')
+    console.log(homeButton)
+}

@@ -8,28 +8,41 @@
 <body class="flex flex-col items-center bg-rose-200 w-screen h-screen content-center">
   <script src="js/script.js"></script>
 
-  <nav class="w-full lg:w-2/3">
-    <div class="relative top-0 w-full h-32">
-      <div class="absolute w-full flex flex-row p-8 justify-between items-center">
-        <div id="side-menu" class="block sm:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
-        flex flex-col space-y-5 text-white duration-300">
-            <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
-            <a class="hover:text-amber-500" href="#">Home</a>
-        </div>
-  
-        <div id="logo">
-          <div class="w-16 h-16 rounded-full bg-blue-900">&nbsp;</div>
-        </div>
-        <div class="flex flex-row gap-4 items-center">
-          <div class="hover:bg-blue-900 hover:text-white cursor-pointer p-2 rounded-md text-blue-900 font-bold">Menu</div>
-  
-          <!-- This is used to open the menu -->
-          <span class="cursor-pointer text-4xl block sm:hidden" onclick="openMenu()">&#9776;</span>
+  <section class="flex content-center w-full lg:w-2/3">
+    <nav class="w-full content-center">
+      <div class="relative top-0 w-full h-32">
+        <div class="absolute w-full flex flex-row p-8 justify-between items-center">
+          <div id="side-menu" class="block sm:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
+          flex flex-col space-y-5 text-white duration-300">
+              <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+              <a class="hover:text-amber-500" href="#">Home</a>
+          </div>
+    
+          <div id="logo">
+            <div class="w-16 h-16 rounded-full bg-blue-900">&nbsp;</div>
+          </div>
+          <div class="flex flex-row gap-4 items-center w-fit">
+            <div class="text-blue-900 font-bold" 
+                  onmouseover="toggleMenuOptions()" onmouseout="toggleMenuOptions()">
+              <div class="relative w-full p-2">
+                <h3 class="hover:bg-blue-900 hover:text-white cursor-pointer rounded-md p-2">Menu</h3>
+                <div id="navbar-menu-dropdown" class="absolute hidden flex flex-col w-fit mt-2 p-2 bg-blue-900 text-white rounded-md gap-2">
+                  <a href="">Cocktails</a>
+                  <a href="">Eats</a>
+                  <a href="">Spirits</a>
+                  <a href="">Beverages</a>
+                </div>
+              </div>
+
+            </div>
+    
+            <!-- This is used to open the menu -->
+            <span class="cursor-pointer text-4xl block sm:hidden" onclick="openMenu()">&#9776;</span>
+          </div>
         </div>
       </div>
-    </div>
-
-  </nav>
+    </nav>
+  </section>
 
   <section class="h-svh content-center">
     <div class="flex flex-col gap-6 text-xl font-semibold w-full items-center text-center p-16 text-blue-900">
@@ -50,7 +63,7 @@
         </a>
         <a href="./cocktails.html">
           <h2 class="shrink border-2 border-blue-900 rounded py-5 px-8 w-fit hover:bg-blue-900 hover:text-white cursor-pointer">
-            Coffee
+            Beverages
           </h2>
         </a>
       </div>
