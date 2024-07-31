@@ -30,12 +30,12 @@ function renderNavbarTemplate() {
                 <div class="absolute w-full flex flex-row p-8 justify-between items-center">
                     <div id="side-menu" class="block sm:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
                                         flex flex-col space-y-5 text-white duration-300">
-                        <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+                        <a href="" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
                         <a class="hover:text-amber-500" href="#">Home</a>
                     </div>
             
                     <div id="logo">
-                        <a href="./index.html">
+                        <a href="./index.html" title="Home" alt="Home Button">
                         <div class="w-16 h-16 rounded-full bg-blue-900">&nbsp;</div>
                         </a>
                     </div>
