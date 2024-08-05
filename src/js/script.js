@@ -25,9 +25,9 @@ function renderNavbarTemplate() {
     const navbar = document.getElementById('navbar')
 
     template.innerHTML = `
-        <nav class="w-full content-center">
-            <div class="relative top-0 w-full h-32">
-                <div class="absolute w-full flex flex-row p-8 justify-between items-center">
+        <nav class="fixed w-full content-center z-10 overflow-hidden">
+            <div class="relative top-0 w-full h-32 bg-rose-200">
+                <div class="w-full flex flex-row p-8 justify-between items-center">
                     <div id="side-menu" class="block sm:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
                                         flex flex-col space-y-5 text-white duration-300">
                         <a href="" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
@@ -45,7 +45,7 @@ function renderNavbarTemplate() {
                             onmouseover="toggleMenuOptions()" onmouseout="toggleMenuOptions()" onclick="toggleMenuOptions()">
                             <div class="relative w-full">
                                 <h3 class="focus:bg-blue-900 focus:text-white hover:bg-blue-900 hover:text-white cursor-pointer rounded-md p-2">Menu</h3>
-                                <div id="navbar-menu-dropdown" class="absolute hidden flex flex-col w-fit mt-2 p-2 bg-blue-900 text-white rounded-md gap-2">
+                                <div id="navbar-menu-dropdown" class="absolute right-0 hidden flex flex-col w-fit mt-2 p-2 bg-blue-900 text-white rounded-md gap-2">
                                     <a href="./cocktails.html">Cocktails</a>
                                     <a href="./eats.html">Eats</a>
                                     <a href="./spirits.html">Spirits</a>
