@@ -48,14 +48,24 @@ function renderFooterTemplate() {
     const footer = document.getElementById('footer')
 
     template.innerHTML = `
-        <footer class="w-full content-center z-10">
-            <div class="relative top-0 w-full h-32 bg-orange-100">
-                <div class="w-full flex flex-row p-8 justify-between items-center">
+        <footer class="w-full">
+            <div class="w-full bg-orange-100 p-8">
+                <div class="w-full flex flex-col sm:flex-row gap-8 text-forest-purple">
 
-                    <div class="flex flex-row gap-2 items-center content-center w-fit">
-
+                    <div class="flex flex-col gap-2 w-fit">
+                        <p class="underline">mediastorm.cy@gmail.com</p>
+                        <p class="underline">+357 99000000</p>
                     </div>
 
+                    <div class="flex flex-col gap-2 w-fit underline">
+                        <p>Odos, Arithmos, Paphos</p>
+                        <p>T.X, CY</p>
+                    </div>
+
+                </div>
+
+                <div class="w-full text-forest-purple pt-4">
+                    <p>Designed by <a class="underline" href="https://www.mediastorm.cy" target="_blank">Mediastorm</a>
                 </div>
             </div>
         </footer>
