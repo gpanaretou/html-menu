@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Coffee Jam Paphos, Menu">
+        <title>Coffee Jam</title>
+        <link href="./output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="flex flex-col w-screen h-full content-center items-center justify-center" onload="renderFooterAndHeader()">
+        <script src="js/script.js" defer></script>
+
+        <div class="flex flex-col h-full w-full content-center bg-orange-100">
+            <section id="navbar" class="flex content-center w-full">
+            </section>
+
+            <section class="flex flex-col h-svh pt-60 pb-6 w-full justify-center items-center">
+                <p class="text-center text-forest-purple text-2xl font-bold">What do you fancy today?</p>
+                <div class="gap-4 w-full h-full justify-center p-4 text-2xl max-w-lg">
+                    <div class="grid grid-cols-2 gap-2 h-2/3">
+                        <a href="./cocktails.html">
+                            <div class="flex relative border border-forest-purple bg-forest-purple rounded-tr-lg w-full h-full shadow">
+                                <div class="absolute p-2 top-0 right-0 ">
+                                    <svg class="w-12 h-12 fill-white" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#ffffff;} </style> <g> <path class="st0" d="M490.72,127.138c3.024-3.318,3.813-8.13,1.992-12.236c-1.813-4.106-5.902-6.764-10.382-6.764H348.212 l9.682-21.471c6.301-13.968,18.208-24.634,32.793-29.375l91.016-29.512L472.696,0L381.68,29.52 c-22.419,7.268-40.719,23.658-50.41,45.147l-15.094,33.471h-286.5c-4.492,0-8.577,2.658-10.39,6.764 c-1.817,4.105-1.028,8.918,1.992,12.236l196.602,215.78v90.35l-78.561,58.252c-3.944,2.919-5.565,8.033-4.024,12.684 c1.544,4.658,5.882,7.796,10.785,7.796h219.841c4.903,0,9.24-3.139,10.785-7.796c1.537-4.651-0.081-9.765-4.016-12.684 l-78.556-58.252v-90.35L490.72,127.138z M276.009,448.106l55.528,41.179H180.472l55.521-41.179 c2.906-2.138,4.597-5.512,4.597-9.114V338.52c0-2.813-1.065-5.569-2.964-7.65L55.383,130.854h250.545l-28.468,63.13H136.907 l119.094,131.195l119.086-131.195h-65.59l28.476-63.13h118.642L274.374,330.87c-1.89,2.081-2.955,4.837-2.955,7.65v100.472 C271.419,442.594,273.111,445.968,276.009,448.106z"></path> </g> </g></svg>
+                                </div>
+                                <p class="absolute p-2 bottom-0 left-0 font-bold text-white">Cocktails</p>
+                            </div>
+                        </a>
+                        <a href="./eats.html">
+                            <div class="flex relative border border-forest-purple rounded-tr-lg bg-forest-purple w-full h-full shadow">
+                                <div class="absolute p-2 top-0 right-0 ">
+                                    <svg class="w-12 h-12 fill-white" fill="#524275" viewBox="0 -24.48 122.88 122.88" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 122.88 73.91" xml:space="preserve" stroke="#524275"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css">  .st0{fill-rule:evenodd;clip-rule:evenodd;}  </style> <g> <path class="st0" d="M97.31,36.95c0,9.92-3.49,18.39-10.48,25.38c-7,7-15.46,10.5-25.38,10.5c-9.88,0-18.34-3.49-25.35-10.5 c-7-6.99-10.52-15.46-10.52-25.38c0-9.89,3.51-18.32,10.52-25.34c7.03-7,15.48-10.52,25.35-10.52c9.92,0,18.38,3.51,25.38,10.52 C93.81,18.63,97.31,27.06,97.31,36.95L97.31,36.95L97.31,36.95L97.31,36.95z M16.37,30.34c3.15-2.15,4.73-4.96,4.46-11.39V2.42 c-0.03-2.31-4.22-2.59-4.43,0l-0.16,13.41c-0.01,2.51-3.78,2.59-3.77,0l0.16-13.87c-0.05-2.48-4.05-2.73-4.1,0 c0,3.85-0.16,10.02-0.16,13.87c0.2,2.43-3.3,2.75-3.21,0L5.32,2.05C5.23,0.18,3.17-0.49,1.77,0.39C0.28,1.34,0.58,3.25,0.52,4.86 L0,20.68c0.08,4.6,1.29,8.34,4.89,9.93c0.55,0.24,1.31,0.43,2.19,0.56L5.84,69.75c-0.07,2.29,1.8,4.16,3.99,4.16h0.5 c2.47,0,4.56-2.11,4.49-4.68l-1.09-38.07C14.88,30.98,15.83,30.71,16.37,30.34L16.37,30.34z M106.74,68.59l-0.06-34.65 c-12.15-7.02-8.28-34.07,3.88-33.92c14.78,0.17,16.53,30.48,3.82,33.81l0.94,34.9C115.5,75.33,106.75,75.94,106.74,68.59 L106.74,68.59z M82.33,36.92c0,5.78-2.03,10.71-6.12,14.8c-4.08,4.07-9.01,6.12-14.79,6.12c-5.74,0-10.67-2.05-14.75-6.12 c-4.08-4.09-6.12-9.02-6.12-14.8c0-5.74,2.04-10.67,6.12-14.74c4.09-4.07,9.01-6.12,14.75-6.12C73.03,16.07,82.33,25.3,82.33,36.92 L82.33,36.92L82.33,36.92z M87.22,36.92c0-7.1-2.5-13.17-7.53-18.2s-11.12-7.53-18.27-7.53c-7.13,0-13.2,2.5-18.2,7.53 c-5.03,5.03-7.56,11.1-7.56,18.2c0,7.12,2.53,13.19,7.56,18.24c5,5.04,11.07,7.57,18.2,7.57c7.14,0,13.23-2.53,18.27-7.57 C84.71,50.1,87.22,44.03,87.22,36.92L87.22,36.92L87.22,36.92L87.22,36.92z"></path> </g> </g></svg>
+                                </div>
+                                <p class="absolute p-2 bottom-0 left-0 font-bold text-white">Food</p>
+                            </div>
+                        </a>
+                        <a href="beverages.html">
+                            <div class="flex relative border border-forest-purple rounded-tr-lg bg-forest-purple w-full h-full shadow">
+                                <div class="absolute p-2 top-0 right-0 ">
+                                    <svg class="w-12 h-12 fill-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Environment / Coffee"> <path id="Vector" d="M4 20H10.9433M10.9433 20H11.0567M10.9433 20C10.9622 20.0002 10.9811 20.0002 11 20.0002C11.0189 20.0002 11.0378 20.0002 11.0567 20M10.9433 20C7.1034 19.9695 4 16.8468 4 12.9998V8.92285C4 8.41305 4.41305 8 4.92285 8H17.0767C17.5865 8 18 8.41305 18 8.92285V9M11.0567 20H18M11.0567 20C14.8966 19.9695 18 16.8468 18 12.9998M18 9H19.5C20.8807 9 22 10.1193 22 11.5C22 12.8807 20.8807 14 19.5 14H18V12.9998M18 9V12.9998M15 3L14 5M12 3L11 5M9 3L8 5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                                </div>
+                                <p class="absolute p-2 bottom-0 left-0 font-bold text-white">Beverages</p>
+                            </div>
+                        </a>
+                        <a href="spirits.html">
+                            <div class="flex relative border border-forest-purple rounded-tr-lg bg-forest-purple w-full h-full shadow">
+                                <div class="absolute p-2 top-0 right-0">
+                                    <svg class="w-12 h-12 fill-white" fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M255.986,218.055c-48.022,0-87.09,39.067-87.09,87.088c0,48.019,39.068,87.085,87.09,87.085 c48.019,0,87.085-39.066,87.084-87.085C343.07,257.123,304.004,218.055,255.986,218.055z M255.986,360.806 c-30.695,0-55.668-24.97-55.668-55.663c0-30.694,24.972-55.666,55.668-55.666c30.692,0,55.663,24.971,55.662,55.666 C311.647,335.836,286.678,360.806,255.986,360.806z"></path> </g> </g> <g> <g> <path d="M422.144,94.881c-26.446-27.877-56.487-51.265-86.88-67.633C301.698,9.167,269.005,0,238.092,0 c-33.845,0-56.397,11.105-68.941,33.946c-10.402,18.945-12.101,43.042-13.9,68.554c-3.111,44.132-6.33,89.765-51.084,121.26 c-41.038,28.88-70.343,59.191-87.097,90.092C0.665,344.103-3.325,374.878,5.53,402.847c10.506,33.184,38.123,60.946,79.865,80.283 C126.164,502.017,178.968,512,238.098,512c61.167,0,129.307-24.504,182.274-65.549c27.426-21.253,49.242-45.486,64.84-72.024 c17.156-29.19,25.854-59.707,25.854-90.703C511.066,224.17,477.825,153.575,422.144,94.881z M401.126,421.613 c-47.647,36.922-108.591,58.965-163.028,58.965c-54.601,0-102.837-8.976-139.495-25.958c-33.52-15.529-55.346-36.71-63.117-61.256 c-6.309-19.924-3.211-41.637,9.205-64.534c14.425-26.602,40.519-53.307,77.56-79.372c56.966-40.087,61.058-98.117,64.346-144.747 c3.676-52.133,6.944-73.288,51.496-73.288c50.433,0,110.715,31.807,161.256,85.083c50.28,53,80.297,115.512,80.297,167.217 C479.645,333.407,451.76,382.377,401.126,421.613z"></path> </g> </g> </g></svg>
+                                </div>
+                                    <p class="absolute p-2 bottom-0 left-0 font-bold text-white">Breakfast</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="footer" class="flex content-center w-full">
+            </section>
+        </div>
+    </body>
+
+</html>
