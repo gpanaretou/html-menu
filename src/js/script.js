@@ -33,10 +33,11 @@ function renderNavbarTemplate() {
                                 </div>
                             </div>
                         </div>
-                    <div class="text-forest-purple font-bold p-2">
-                        <a href="./index.html">1</a>
-                        <a href="./index1.html">2</a>
-                    </div>
+                        <div class="text-forest-purple font-bold p-2">
+                            <a href="./index.html">1</a>
+                            <a href="./index1.html">2</a>
+                        </div>
+                    </div
                 </div>
             </div>
         </nav>
