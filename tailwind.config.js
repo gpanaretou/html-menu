@@ -9,6 +9,8 @@ module.exports = {
     colors: {
       'tan': '#f1ddbf',
       'forest-purple': '#524275',
+      'green-deep': '#004d40',
+      'green-light': '#ccffcc'
     }
     },
   },
