@@ -98,7 +98,7 @@ function sidenavTemplate() {
                                         </div>
                                         <div class="flex flex-row gap-4">
                                             <span class="h-full w-1 bg-white">&nbsp;</span>
-                                            <a href="eats.html" class="">EATS</a>
+                                            <a href="food_menu.html" class="">FOOD</a>
                                         </div>
                                         <div class="flex flex-row gap-4">
                                             <span class="h-full w-1 bg-white">&nbsp;</span>
