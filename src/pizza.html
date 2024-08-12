@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Coffee Jam Paphos, Menu">
+        <title>Coffee Jam</title>
+        <link href="./output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="flex flex-col items-center bg-green-light w-screen h-full min-h-screen content-center" onload="renderFooterAndHeader()">
+        <script src="js/script.js" defer></script>
+    
+        <section id="navbar" class="flex content-center w-full pb-32">
+        </section>
+
+        <section id="pizza-menu" class="flex flex-col p-8 text-forest-purple grow relative">
+            <h1 class="sticky top-0 font-bold p-4 text-2xl text-center">
+                PIZZA
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-x-4">
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Margarita 9.50</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Mozzarella cheese & fresh tomato</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Vegetarian 9.50</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Onion, sweetcorn, tomato, green pepper, mushrooms topped with cheese</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Friends Special 11.90</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Bacon, ham, mushrooms, green pepper, sweetcorn topped with cheese</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Pepperoni 11.50</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Pepperoni, mushrooms, green pepper topped with cheese</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Hawaii 11.50</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Ham, pineapple topped with cheese</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4 gap-y-4">
+                    <h2 class="text-xl font-bold">Seafood 12.50</h2>
+                    <div class="flex flex-col text-sm pb-8 font-semibold border-b-2 border-forest-purple">
+                        <p>Shrimps, tuna, crab sticks topped with cheese</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-forest-purple" id="options">
+            <div class="flex flex-col w-full gap-4 text-green-light p-4 max-w-2xl">
+                <p class="font-bold w-full justify-self-center">Fancy something else?</p>
+                <div class="grid grid-cols-2 sm:flex justify-center sm:justify-start w-full gap-4 font-semibold">
+                    <a class="w-full" href="./burger.html">
+                        <h2 class="border-2 border-green-light rounded p-4 hover:bg-green-light hover:text-forest-purple cursor-pointer text-center">
+                            Burgers
+                        </h2>
+                    </a>
+                    <a class="w-full" href="./salad.html">
+                        <h2 class="border-2 border-green-light rounded p-4 hover:bg-green-light hover:text-forest-purple cursor-pointer text-center">
+                            Salads
+                        </h2>
+                    </a>
+                    <a class="w-full" href="./grill.html">
+                        <h2 class="border-2 border-green-light rounded p-4 hover:bg-green-light hover:text-forest-purple cursor-pointer text-center">
+                            Grill
+                        </h2>
+                    </a>
+                    <a class="w-full" href="./pasta.html">
+                        <h2 class="border-2 border-green-light rounded p-4 hover:bg-green-light hover:text-forest-purple cursor-pointer text-center">
+                            Pasta
+                        </h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="flex content-center w-full">
+        </section>
+
+    </body>
+</html>
