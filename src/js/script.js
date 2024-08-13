@@ -26,9 +26,9 @@ function renderNavbarTemplate() {
                             <div class="relative w-full">
                                 <h3 class="cursor-pointer rounded-md p-2">MENU</h3>
                                 <div id="navbar-menu-dropdown" class="absolute right-0 hidden flex flex-col w-fit mt-2 p-2 bg-green-light rounded-md gap-2">
-                                    <a href="./cocktails.html">Cocktails</a>
-                                    <a href="./eats.html">Eats</a>
-                                    <a href="./spirits.html">Spirits</a>
+                                    <a href="./cocktails.html">Alchohol</a>
+                                    <a href="./food_menu.html">Food</a>
+                                    <a href="./spirits.html">Deserts</a>
                                     <a href="./beverages.html">Beverages</a>
                                 </div>
                             </div>
